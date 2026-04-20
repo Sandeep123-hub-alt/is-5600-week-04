@@ -16,7 +16,7 @@ app.get('/', api.handleRoot)
 app.get('/products', api.listProducts)
 app.get('/products/:id', api.getProduct)
 app.post('/products', api.createProduct)
-app.put('/products/:id', api.updateProduct)
+app.put('/products/:id', api.editProduct)
 app.delete('/products/:id', api.deleteProduct)
 
 app.use(middleware.notFound)
